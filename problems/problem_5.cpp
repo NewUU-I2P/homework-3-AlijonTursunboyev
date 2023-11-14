@@ -3,7 +3,7 @@ float problemSolution5(float x, float y, char operation) {
    // write your code here
 
 switch(operation){
-    case '+':
+    case '+ ':
         result=x+y;
         break;
     case '-':

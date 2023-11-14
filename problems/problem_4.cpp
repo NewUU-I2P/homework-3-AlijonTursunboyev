@@ -1,6 +1,6 @@
 #include <string>
 #include <sstream>
-
+#include <cmath>
 std::string problemSolution4(const std::string &macAddress) {
     // write your code here
     std::string macAddressA = macAddress.substr(0,2);
@@ -10,8 +10,8 @@ std::string problemSolution4(const std::string &macAddress) {
     std::string result;
     int temp=0;
 
-    for (int cout=1; cout != -1; count--){
-        num=macAddressA[cout];
+    for (int count=1; count != -1; count--){
+        num=macAddressA[count];
         if(int(num[0])>=65 & int(num[0]<=70)){
             for (int i=0;i<7;i++){
                 if(hexadecimal_letters[i]==num){
@@ -20,7 +20,7 @@ std::string problemSolution4(const std::string &macAddress) {
                 }
             }
         }
-        temp=temp+(std::stoi(num))*pow(16,2-count-1);
+        temp=temp+(std::stoi(num))* pow (16,2-count-1);
     }
     if(temp==255){
         result="broadcast";

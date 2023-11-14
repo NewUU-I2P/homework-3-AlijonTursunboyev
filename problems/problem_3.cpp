@@ -17,7 +17,7 @@ if(S=='M'){
         else if(height>1.60 && height<=1.75)
             result="Normal";
         else if(height>1.75)
-            result="Tall";
+            result=" Tall";
 }
 
 
